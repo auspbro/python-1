@@ -1,5 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont
-text = "52"
+text = "99"
 im = Image.open('1.bmp')
 w,h = im.size
 font_size = h//4
