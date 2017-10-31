@@ -7,17 +7,17 @@
 
 from PIL import Image, ImageDraw, ImageFont
 
-number = str(5)
-color = (255, 0, 0)
-windows_font = 'Arial.ttf'
+number = str(9)     # 最大只能显示9
+color = (255, 0, 0)   # 红色
+windows_font = 'Arial.ttf'  # 字体
 
 def draw_text(text, fill_color, windows_font):
-    im = Image.open('0.jpg')
+    im = Image.open('zen.jpg')
     x, y = im.size
     draw = ImageDraw.Draw(im)
     font = ImageFont.truetype(windows_font, 35)
-    draw.text((x-20, 7), text, fill_color, font)
+    draw.text((x-30, 7), text, fill_color, font)
 
-    im.save('1.jpg')
+    im.save('zen-demo.jpg')
 
 draw_text(number, color, windows_font)
